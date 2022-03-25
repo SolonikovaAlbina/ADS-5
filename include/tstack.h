@@ -1,8 +1,6 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
-
 const int size = 100;
-
 template<typename type>
 class TStack {
 private:
