@@ -6,13 +6,13 @@ const int size = 100;
 
 template<typename type>
 class TStack {
-private:
-	type arr[size];
-	int top;
-public:
-	TStack() : top(-1) { }
-	type get() const {
-		return arr[top];
+	private:
+		type arr[size];
+		int top;
+	public:
+		TStack() : top(-1) { }
+		type get() const {
+			return arr[top];
 	}
 	bool isEmpty() const {
 		return top == -1;
