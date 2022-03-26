@@ -2,14 +2,12 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
-const int size = 100;
-
-template<typename type>
-class TStack {
+template<typename type, int size>
+class TStack { 
   private:
     type arr[size];
     int top;
-  public:
+  public: 
     TStack() : top(-1) { }
     type get() const {
       return arr[top];
