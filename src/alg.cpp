@@ -24,7 +24,7 @@ std::string infx2pstfx(std::string inf) {
   int i = 0;
   char x = inf[i];
   char tem = 0;
-  TStack <char> stackChar;
+  TStack <char, 100> stackChar;
   while (x) {
     int pr;
     pr = priority(x);
@@ -85,8 +85,8 @@ int calculating(char oper, int num1, int num2) {
   }
 }
 
-int eval(std::string pref) {
-  TStack <int> stackInt;
+int eval(std::string pst) {
+  TStack <int, 100> stackInt;
   int i = 0, res = 0;
   char x = pst[i];
   while (x) {
