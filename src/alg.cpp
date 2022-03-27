@@ -83,6 +83,7 @@ int calculating(char oper, int num1, int num2) {
       return num1 / num2;
       break;
   }
+  return 0;
 }
 
 int eval(std::string pst) {
