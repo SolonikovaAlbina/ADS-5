@@ -29,4 +29,5 @@ public:
             arr[++top] = item;
     }
 };
+
 #endif // INCLUDE_TSTACK_H_
